@@ -1,0 +1,72 @@
+img {
+  width: 5.3125rem;
+}
+
+.flex {
+  width: 100%;
+  max-width: 40rem;
+  margin: 7.875rem auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+
+  background-color: var(--bg-button);
+  padding: 1rem;
+  font-weight: bold;
+  color: #000;
+  font-size: 0.75rem;
+
+  outline: none;
+  border: none;
+  border-radius: 0.3125rem;
+
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button img {
+  width: 2.1875rem;
+}
+
+.info {
+  max-width: 28rem;
+  text-align: center;
+}
+
+.movieInfo {
+  display: flex;
+  gap: 2rem;
+}
+
+.movieInfo h1 {
+  margin-bottom: 1.2rem;
+}
+
+.movieInfo img {
+  width: 10.625rem;
+}
+
+@media screen and (max-width: 680px) {
+  .flex {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .movieInfo {
+    flex-direction: column;
+    text-align: center;
+  }
+}
